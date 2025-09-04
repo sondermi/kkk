@@ -1,0 +1,463 @@
+<html lang="zh-CN"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球哈啦认证机构查询指南</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a56db',
+                        secondary: '#3b82f6',
+                        accent: '#2563eb',
+                        neutral: '#f3f4f6',
+                        dark: '#1e293b'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+            .step-number {
+                width: 2.5rem;
+                height: 2.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+    <!-- 顶部导航栏 -->
+    <header class="sticky top-0 z-50 bg-white shadow-md transition-all duration-300">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fa fa-certificate text-primary text-2xl"></i>
+                <h1 class="text-xl font-bold text-primary hidden sm:block">全球哈啦认证机构</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#overview" class="text-gray-600 hover:text-primary transition-colors">概述</a>
+                <a href="#applicability" class="text-gray-600 hover:text-primary transition-colors">适用性</a>
+                <a href="#indonesia" class="text-gray-600 hover:text-primary transition-colors">印尼查询</a>
+                <a href="#malaysia" class="text-gray-600 hover:text-primary transition-colors">马来西亚查询</a>
+                <a href="#middle-east" class="text-gray-600 hover:text-primary transition-colors">中东查询</a>
+                <a href="#turkey" class="text-gray-600 hover:text-primary transition-colors">土耳其查询</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <i class="fa fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="#overview" class="text-gray-600 hover:text-primary py-2 transition-colors">概述</a>
+                <a href="#applicability" class="text-gray-600 hover:text-primary py-2 transition-colors">适用性</a>
+                <a href="#indonesia" class="text-gray-600 hover:text-primary py-2 transition-colors">印尼查询</a>
+                <a href="#malaysia" class="text-gray-600 hover:text-primary py-2 transition-colors">马来西亚查询</a>
+                <a href="#middle-east" class="text-gray-600 hover:text-primary py-2 transition-colors">中东查询</a>
+                <a href="#turkey" class="text-gray-600 hover:text-primary py-2 transition-colors">土耳其查询</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主横幅 -->
+    <section class="bg-gradient-to-r from-primary to-accent text-white py-12 md:py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4 text-shadow">全球哈啦认证机构查询指南</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto opacity-90">
+                为您提供详尽的全球哈拉认证查询流程，助您准确、高效地获取相关认证信息
+            </p>
+        </div>
+    </section>
+
+    <!-- 主要内容 -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- 概述部分 -->
+        <section id="overview" class="mb-16">
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 card-hover">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-dark flex items-center">
+                    <i class="fa fa-info-circle text-primary mr-3"></i>概述
+                </h2>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    本文旨在为您提供一份详尽的全球哈拉认证查询流程指南，以便您能够准确、高效地获取相关认证信息。
+                </p>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    首先进入哈啦里认证服务（重庆）有限公司（HCS）官网 
+                    <a href="https://www.chnhalal.com/" target="_blank" class="text-primary font-medium hover:underline">
+                        https://www.chnhalal.com/
+                    </a>，下拉至底部，可以看到各国政府的授权图标（如图1所示）。
+                </p>
+                
+                <div class="mt-8">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">图1：各国政府授权图标</h3>
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/e2aa58686ae246de9abbfff9cdd5bbeb.png~tplv-a9rns2rl98-24:720:720.png?rk3s=1fb89129&amp;x-expires=1757511687&amp;x-signature=nlwwq6qpl3xi7VTFAlNNEG5vH7w%3D" alt="各国政府的授权图标展示" class="w-full h-auto rounded shadow-md hover:opacity-90 transition-opacity">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 各体系适用性情况 -->
+        <section id="applicability" class="mb-16">
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 card-hover">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-dark flex items-center">
+                    <i class="fa fa-globe text-primary mr-3"></i>各体系适用性情况
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- JAKIM -->
+                    <div class="bg-blue-50 p-5 rounded-lg border border-blue-100">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white mr-3">
+                                <i class="fa fa-building"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">马来西亚发展署JAKIM</h3>
+                        </div>
+                        <p class="text-gray-700">
+                            适用于东南亚方向，比如越南、老挝、柬埔寨、泰国、缅甸、新加坡、菲律宾。
+                        </p>
+                    </div>
+                    
+                    <!-- BPJPH -->
+                    <div class="bg-green-50 p-5 rounded-lg border border-green-100">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-white mr-3">
+                                <i class="fa fa-certificate"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">印尼BPJPH</h3>
+                        </div>
+                        <p class="text-gray-700">
+                            印度尼西亚宗教部哈拉产品保障局BPJPH适用于印尼本国。
+                        </p>
+                    </div>
+                    
+                    <!-- GAC -->
+                    <div class="bg-yellow-50 p-5 rounded-lg border border-yellow-100">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 rounded-full bg-yellow-600 flex items-center justify-center text-white mr-3">
+                                <i class="fa fa-handshake-o"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">海湾阿拉伯国家合作委员会GAC</h3>
+                        </div>
+                        <p class="text-gray-700">
+                            适用于包括阿拉伯联合酋长国、苏丹、卡塔尔、科威特、沙特阿拉伯、也门、约旦、摩洛哥等海湾阿拉伯国家合作委员会的国家。
+                        </p>
+                    </div>
+                    
+                    <!-- HAK -->
+                    <div class="bg-red-50 p-5 rounded-lg border border-red-100">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center text-white mr-3">
+                                <i class="fa fa-flag"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">土耳其HAK</h3>
+                        </div>
+                        <p class="text-gray-700">
+                            适用于欧盟各国（57国）。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 印度尼西亚授权机构查询 -->
+        <section id="indonesia" class="mb-16">
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 card-hover">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-dark flex items-center">
+                    <i class="fa fa-map-marker text-green-600 mr-3"></i>印度尼西亚授权机构查询
+                </h2>
+                
+                <div class="grid md:grid-cols-5 gap-8">
+                    <!-- 步骤说明 -->
+                    <div class="md:col-span-2">
+                        <div class="flex items-center mb-4">
+                            <span class="step-number bg-green-600 text-white rounded-full font-bold mr-3">1</span>
+                            <p class="text-gray-700">点击BPJPH图标进入印尼授权信息官网。</p>
+                        </div>
+                        
+                        <div class="flex items-center mb-4">
+                            <span class="step-number bg-green-600 text-white rounded-full font-bold mr-3">2</span>
+                            <p class="text-gray-700">输入发证机构名称（如Chongqing (HCS)），即可查询机构的授权情况。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 图片展示 -->
+                    <div class="md:col-span-3">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">图2：印度尼西亚授权机构查询步骤</h3>
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/5ca89199570346b988a5b6328fc9c3d3.png~tplv-a9rns2rl98-24:720:720.png?rk3s=1fb89129&amp;x-expires=1757511687&amp;x-signature=g8iRRAdJGLVb1jOzqPDApGgL4go%3D" alt="印度尼西亚授权机构查询步骤截图" class="w-full h-auto rounded shadow-md hover:opacity-90 transition-opacity">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 马来西亚授权机构查询 -->
+        <section id="malaysia" class="mb-16">
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 card-hover">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-dark flex items-center">
+                    <i class="fa fa-map-marker text-blue-600 mr-3"></i>马来西亚授权机构查询
+                </h2>
+                
+                <div class="grid md:grid-cols-5 gap-8">
+                    <!-- 步骤说明 -->
+                    <div class="md:col-span-2">
+                        <div class="flex items-center mb-4">
+                            <span class="step-number bg-blue-600 text-white rounded-full font-bold mr-3">1</span>
+                            <p class="text-gray-700">点击JAKIM图标进入马来西亚发展署官网。</p>
+                        </div>
+                        
+                        <div class="flex items-center mb-4">
+                            <span class="step-number bg-blue-600 text-white rounded-full font-bold mr-3">2</span>
+                            <p class="text-gray-700">下拉点击Halal，接着依次点击IHAB Foreign Halal Certification Body，Recognised Foreign Halal Certification Body (FHCB)项。</p>
+                        </div>
+                        
+                        <div class="flex items-center mb-4">
+                            <span class="step-number bg-blue-600 text-white rounded-full font-bold mr-3">3</span>
+                            <p class="text-gray-700">点击左下角PDF文件，就可获取所有授权机构的信息。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 图片展示 -->
+                    <div class="md:col-span-3">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">图3：马来西亚授权机构查询步骤</h3>
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/7790e285d30541f48609247ddce33ec7.png~tplv-a9rns2rl98-24:720:720.png?rk3s=1fb89129&amp;x-expires=1757511687&amp;x-signature=zZLsGzJZTahFEA5JVrwuJfjaT2o%3D" alt="马来西亚授权机构查询步骤截图" class="w-full h-auto rounded shadow-md hover:opacity-90 transition-opacity">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 中东授权机构查询 -->
+        <section id="middle-east" class="mb-16">
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 card-hover">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-dark flex items-center">
+                    <i class="fa fa-map-marker text-yellow-600 mr-3"></i>中东授权机构查询
+                </h2>
+                
+                <div class="grid md:grid-cols-5 gap-8">
+                    <!-- 步骤说明 -->
+                    <div class="md:col-span-2">
+                        <div class="flex items-center mb-4">
+                            <span class="step-number bg-yellow-600 text-white rounded-full font-bold mr-3">1</span>
+                            <p class="text-gray-700">点击GAC图标，进入海湾阿拉伯国家合作委员会认证中心官网。</p>
+                        </div>
+                        
+                        <div class="flex items-center mb-4">
+                            <span class="step-number bg-yellow-600 text-white rounded-full font-bold mr-3">2</span>
+                            <p class="text-gray-700">最右侧框内选择HALAL PRODUCT CERTIFICATION，第二行country选择China。</p>
+                        </div>
+                        
+                        <div class="flex items-center mb-4">
+                            <span class="step-number bg-yellow-600 text-white rounded-full font-bold mr-3">3</span>
+                            <p class="text-gray-700">点击SEARCH，便可以看到中国有3家授权的机构。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 图片展示 -->
+                    <div class="md:col-span-3">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">图4：中东授权机构查询步骤</h3>
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/03ee13345d3446118dc2e6c493c394c6.png~tplv-a9rns2rl98-24:720:720.png?rk3s=1fb89129&amp;x-expires=1757511687&amp;x-signature=1BPZwqHa7y0RaK21DAsAidziNcc%3D" alt="中东授权机构查询步骤截图" class="w-full h-auto rounded shadow-md hover:opacity-90 transition-opacity">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 土耳其授权机构查询 -->
+        <section id="turkey" class="mb-16">
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 card-hover">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-dark flex items-center">
+                    <i class="fa fa-map-marker text-red-600 mr-3"></i>土耳其授权机构查询
+                </h2>
+                
+                <div class="grid md:grid-cols-5 gap-8">
+                    <!-- 步骤说明 -->
+                    <div class="md:col-span-2">
+                        <div class="flex items-center mb-4">
+                            <span class="step-number bg-red-600 text-white rounded-full font-bold mr-3">1</span>
+                            <p class="text-gray-700">点击HAK图标，进入土耳其共和国认证部。</p>
+                        </div>
+                        
+                        <div class="flex items-center mb-4">
+                            <span class="step-number bg-red-600 text-white rounded-full font-bold mr-3">2</span>
+                            <p class="text-gray-700">点击Accredited HCACs，下拉便可以找到中国重庆HCS。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 图片展示 -->
+                    <div class="md:col-span-3">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">图5：土耳其授权机构查询步骤</h3>
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/8f0d0acb34414950a88c85947b3610b9.png~tplv-a9rns2rl98-24:720:720.png?rk3s=1fb89129&amp;x-expires=1757511687&amp;x-signature=PleJKC01mAVhBWqKdyCNxZra2wM%3D" alt="土耳其授权机构查询步骤截图" class="w-full h-auto rounded shadow-md hover:opacity-90 transition-opacity">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 总结部分 -->
+        <section class="bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl p-6 md:p-8 border border-primary/20">
+            <h2 class="text-2xl font-bold mb-4 text-dark">总结</h2>
+            <p class="text-gray-700 leading-relaxed">
+                本指南为您提供了清晰、系统的查询步骤，确保您能顺利获取全球主要地区的哈啦认证授权机构相关信息。
+                无论您需要进入东南亚、中东、欧盟还是其他地区市场，通过上述步骤都能快速验证相关机构的认证资质，
+                为您的业务发展提供有力支持。
+            </p>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fa fa-certificate mr-2"></i>全球哈啦认证
+                    </h3>
+                    <p class="text-gray-400">
+                        提供全球范围内的哈啦认证机构查询服务，助力企业拓展国际市场。
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">快速链接</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#overview" class="hover:text-white transition-colors">概述</a></li>
+                        <li><a href="#applicability" class="hover:text-white transition-colors">适用性情况</a></li>
+                        <li><a href="#indonesia" class="hover:text-white transition-colors">印尼查询</a></li>
+                        <li><a href="#malaysia" class="hover:text-white transition-colors">马来西亚查询</a></li>
+                        <li><a href="#middle-east" class="hover:text-white transition-colors">中东查询</a></li>
+                        <li><a href="#turkey" class="hover:text-white transition-colors">土耳其查询</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">相关资源</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>
+                            <a href="https://www.chnhalal.com/" target="_blank" class="hover:text-white transition-colors">
+                                HCS官网
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://bpjph.halal.go.id/" target="_blank" class="hover:text-white transition-colors">
+                                印尼BPJPH官网
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.islam.gov.my/ms/" target="_blank" class="hover:text-white transition-colors">
+                                马来西亚发展署官网
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gcc-accreditation.org" target="_blank" class="hover:text-white transition-colors">
+                                GAC官网
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://english.hak.gov.tr/" target="_blank" class="hover:text-white transition-colors">
+                                土耳其HAK官网
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-500">
+                <p>© 2023 全球哈啦认证机构查询指南. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-accent">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // 移动端菜单切换
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // 关闭移动菜单（如果打开）
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // 返回顶部按钮
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+            
+            // 导航栏滚动效果
+            const header = document.querySelector('header');
+            if (window.pageYOffset > 50) {
+                header.classList.add('py-2');
+                header.classList.remove('py-3');
+            } else {
+                header.classList.add('py-3');
+                header.classList.remove('py-2');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // 图片加载错误处理
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('error', function() {
+                this.src = `https://picsum.photos/seed/${this.alt}/800/500`;
+                this.alt = `无法加载 ${this.alt}，显示替代图片`;
+            });
+        });
+    </script>
+
+
+</body></html>
